@@ -1,0 +1,331 @@
+:root{
+	--background: #918d85;
+	--white: #fff;
+	--one: #210a74;
+	--two: #02572a;
+	--black: #54585d;
+	--process: #a5a5a5;
+	--circle: #3faf6a;
+	--grey: #cdd0d3;
+	--link-visited: #2baf68;
+}
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: system-ui;
+	scrollbar-width: auto;
+	scrollbar-color: var(--one) var(--two);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 1em;
+}
+  
+*::-webkit-scrollbar-track {
+	background: var(--two);
+}
+  
+*::-webkit-scrollbar-thumb {
+	background-color: var(--one);
+	border-radius: 20px;
+	border: 3px solid var(--two);
+}
+
+body{
+	background: var(--background);
+}
+
+.col-div-3{
+	width: 33%; 
+	float: left;
+}
+
+.col-div-7{
+	width: 75%; 
+	float: left;
+}
+
+.col-div-4{
+	width: 35%; 
+	float: left;
+}
+
+.col-div-8{
+	width: 65%; 
+	float: left;
+}
+
+.col-div-6{
+	width: 50%; 
+	float: left; 
+	position: relative;}
+
+.clearfix{
+	clear: both;
+}
+
+.resume-main{
+	width: 1000px; 
+	height: 900px; 
+	background: linear-gradient(var(--one), var(--two));
+	margin: 10px auto;
+	box-shadow:10px 10px 10px 10px #54585d33;
+}
+
+.left-box{
+	width: 25%; 
+	float: left; 
+	height: 750px;
+}
+
+.right-box{
+	width: 75%; 
+	float: left; 
+	background-color: var(--grey); 
+	height: 800px;
+	margin: 50px 0px; 
+	border-radius: 50px 0px 0px 50px; 
+	padding:30px 50px;
+	box-shadow: -7px 2px 15px 2px #54585d52;
+}
+
+.profile{
+	width: 150px; 
+	height: 150px; 
+	border: 3px solid 
+	var(--white); 
+	padding: 7px; 
+	border-radius: 50%; 
+	margin: 20px auto;
+}
+
+.profile img{
+	width: 100%; 
+	border-radius: 50%;
+}
+
+.content-box{
+	padding: 0px 40px 0px 45px;
+}
+
+.content-box h2{
+	text-transform: uppercase;
+	font-weight: 500;
+	color: var(--white); 
+	letter-spacing: 1px; 
+	font-size: 20px;
+}
+
+.hr1{
+	border: none; 
+	height: 1px; 
+	background: var(--white); 
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.p1{
+	font-size: 11px;
+	color: var(--white);
+	letter-spacing: 1px;
+	padding-top: 12px;
+}
+
+#progress{
+	background: var(--process);
+	border-radius: 13px;
+	height: 8px;
+	width: 100%;
+}
+
+#progress:after {
+    content: '';
+    display: block;
+    background: var(--circle);
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+#progress1{
+	background: var(--process);
+	border-radius: 13px;
+	height: 8px;
+	width: 100%;}
+
+#progress1:after {
+    content: '';
+    display: block;
+    background: var(--circle);
+    width: 100%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+.content-box h3{
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-top: 10px;
+    color: white;
+	font-weight: 500;
+}
+
+.p2{
+	font-size: 13px; 
+	margin-bottom: 5px; 
+	margin-top: 5px; 
+	color: var(--white);
+}
+
+.circle{
+	color:var(--circle); 
+	font-size: 14px!important; 
+	margin-top: 7px;
+}
+
+.circle1{
+	color:var(--process); 
+	font-size: 14px!important; 
+	margin-top: 7px;
+}
+
+.in{
+	background:var(--white);
+	color: var(--one);
+	padding: 8px;
+	border-radius: 20px; 
+	font-size: 14px!important;
+}
+
+.inp{
+	color: var(--white); 
+	font-size: 11px;
+}
+
+.col3{
+	text-align: center;
+}
+
+h1{
+	font-size: 30px; 
+	text-transform: uppercase; 
+	color: var(--white); 
+	line-height: 30px;
+}
+
+h1 span{
+	color: var(--white);
+}
+
+.p3{
+	letter-spacing: 1px; 
+	color: #ffffff; 
+	font-weight: 200;
+}
+
+.heading{
+	text-transform: uppercase;
+	font-weight: 500;
+	color: var(--one); 
+	letter-spacing: 1px; 
+	font-size: 20px;
+}
+
+.hr2{
+	border: none; 
+	height: 1px; 
+	background: var(--black); 
+	margin-top: 3px;
+}
+
+.p5{
+	font-weight: 700;
+	color: var(--black);
+}
+
+.span1{
+	font-size: 12px;
+	color: var(--black);
+}
+
+#menu li{
+	display:inline;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: var(--white);
+	font-size: 0.9rem;
+}
+
+#menu-bar{
+	width: 780px;
+	float: right;
+	align-content: right;
+}
+
+a{
+	color: var(--white);
+}
+
+a:visited{
+	color:var(--link-visited);
+}
+
+.linkedin{
+	color: var(--white);
+}
+
+.linkedin:visited{
+	color: var(--process);
+}
+
+#menu-bar{
+	margin-top: 15px;
+	margin-bottom: -25px;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: 1px solid #333;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 4px;
+    transition: all 0.3s;
+	min-width: 160px; 
+    text-align: center;
+    box-sizing: border-box;
+	margin-bottom: 3px;
+}
+
+.btn-download:hover {
+    background-color: #628099;
+    color: #000000;
+}
+
+
+.flag {
+    width: 20px;       /* Μικρό και διακριτικό μέγεθος */
+    height: auto;
+    vertical-align: middle;
+    margin: 0 5px;
+    transition: transform 0.2s, opacity 0.2s;
+    cursor: pointer;
+}
+
+.flag:hover {
+    transform: scale(1.2); /* Μεγαλώνει ελαφρώς όταν περνάει το ποντίκι */
+    opacity: 1;
+}
+
+.flag.active {
+    opacity: 1;
+}
+
+.flag:not(.active) {
+    opacity: 0.6; /* Πιο αχνή η σημαία που δεν είναι επιλεγμένη */
+}

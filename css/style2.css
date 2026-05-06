@@ -1,0 +1,156 @@
+:root{
+  --biscque: bisque;
+  --yellow: yellow;
+  --black: black;
+  --one: #210a74;
+	--two: #02572a;
+  font-size: 14px;
+}
+
+table, th, td {
+  border: 1px solid black;
+  vertical-align: top;
+}
+
+th{
+  background-color: var(--biscque);
+}
+
+td{
+  padding: 15px;
+}
+
+li, p{
+  text-align: justify;
+}
+
+h2{
+  width: 650px;
+  text-align: center;
+
+}
+
+h3{
+  width: 650px;
+  text-align: center;
+  background-color: cadetblue;
+  color: black;
+}
+
+h4{
+  width: 650px;
+  background-color: rgb(124, 124, 214);
+  color: black;
+  text-align: center;
+}
+
+#welcome{
+  text-align: center;
+}
+
+.boldtext{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: list-item;
+  list-style-position: outside;
+  font-weight: bold;
+  margin-left: 1em;
+}
+
+#contact{
+  text-align: center;
+}
+
+#home{
+  width: 650px;
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+	width: 1em;
+}
+  
+*::-webkit-scrollbar-track {
+	background: var(--two);
+}
+  
+*::-webkit-scrollbar-thumb {
+	background-color: var(--one);
+	border-radius: 20px;
+	border: 3px solid var(--two);
+ }
+
+*{
+    scrollbar-width: auto;
+    scrollbar-color: var(--one) var(--two);
+}
+
+.form{
+  text-align: center;
+  border: 2px;
+  border-color: var(--one);
+}
+
+#message{
+  width: 400px;
+  height: 200px;
+}
+
+#text{
+  width: 200px;
+}
+
+#toplink{
+  float: right;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: 1px solid #333;
+    text-decoration: none;
+    color: #333;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.btn-download:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+#backToTop {
+    display: none; /* Κρυμμένο αρχικά */
+    position: fixed; /* Floating θέση */
+    top: 50%;
+    
+    right: 10px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #333; /* Χρώμα που ταιριάζει με το CV σου */
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30%; /* Κυκλικό κουμπί */
+    font-size: 20px;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #555; /* Εφέ στο hover */
+}
+
+.signature {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 20px;
+    display: block;
+    text-align: right;
+}

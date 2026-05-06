@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Argiris Karalis">
+	<title>Argiris Karalis - Non IT Seminars</title>
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<h2 id="top">Non IT Seminars</h2>
+
+<h3>Data Protection & Compliance</h3>
+
+<p class="boldtext">Online Course, General Data Protection Regulation GDPR, Learning Platform Alison.con</p>
+<p>Introduction to the General Data Protection Regulation</p>
+
+<p class="boldtext">Online Course «GDPR and 40 Thieves», Mathesis, Crete University Press</p>
+<p></p>General Data Protection Regulation presentation.<br>
+
+<h3>Digital Arts & Photography</h3>
+
+<p class="boldtext">Online Course, Become a Photographer Learning path, LinkedIn Learning</p>
+<p>Introduction to photography, Effective photographs, Photography foundations (Exposure, Lenses, Composition, Natural, studio and flash lights), Software (Lightroom, Photoshop)</p>
+
+
+<p class="boldtext">Online Course, The Antikythera Mechanism, Mathesis, Crete University Press</p>
+<p></p>Ancient Greeks and astronomy, Greek astronomers, Discovery of the mechanism, Mechanism functions and structure</p>
+
+<h3>General Science & Humanities</h3>
+
+<p class="boldtext">Online Course Journey to the Universe, First stop: Our Solar System, Mathesis, Crete University Press</p>
+<p>Introduction to astronomy, movements, orbits and rotations of the sun and the planets of the solar system, solar and moon eclipse, Newton’s laws of motion and universal gravitation.</p>
+
+<button id="backToTop" title="Go to top">^</button>
+<script>
+// Παίρνουμε το κουμπί
+const backToTopBtn = document.getElementById("backToTop");
+
+// Όταν ο χρήστης σκρολάρει, τρέχει η συνάρτηση
+window.onscroll = function() {
+    scrollFunction();
+};
+
+function scrollFunction() {
+    // Εμφανίζεται αν σκρολάρουμε πάνω από 300px από την κορυφή
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopBtn.style.display = "block";
+    } else {
+        backToTopBtn.style.display = "none";
+    }
+}
+
+// Όταν πατηθεί το κουμπί, πηγαίνει στην κορυφή
+backToTopBtn.addEventListener("click", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // Ομαλό σκρολάρισμα
+    });
+});
+</script>
+
+</body>
