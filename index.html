@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <script type="text/javascript">
+        var userLang = navigator.language || navigator.userLanguage; 
+        
+        if (userLang.startsWith('el')) {
+            window.location.replace("el/index.html");
+        } else {
+            // Αν δεν είναι Ελληνικά, στείλε τους στα Αγγλικά ως default
+            window.location.replace("en/index.html");
+        }
+    </script>
+    <!-- Fallback αν η JS είναι κλειστή -->
+    <meta http-equiv="refresh" content="0; url=en/index.html">
+</head>
+<body>
+</body>
+</html>
