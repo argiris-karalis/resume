@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Argiris Karalis">
+    <title>CV - Non Tech Seminars</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="../image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <header>
+        <nav class="navbar">
+            <!-- Logo (Εμφανίζεται μόνο σε mobile) -->
+            <div class="logo">
+                <a href="index.html"><img src="../images/logo.png" alt="Logo"></a>
+            </div>
+
+            <!-- Links του Μενού -->
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="experience.html">Experience</a>
+                <a href="education.html">Education</a>
+                <!-- Dropdown για τα Seminars (Πιάνει μία θέση) -->
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Seminars ▾</a>
+                    <div class="dropdown-content">
+                        <a href="tech-seminars.html">Tech Seminars</a>
+                        <a href="other-seminars.html">Non-Tech Seminars</a>
+                    </div>
+                </div>
+                <a href="skills.html">Tech Knowledge</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <!-- Δεξιά στοιχεία (Σημαία + Hamburger) -->
+            <div class="nav-right-controls">
+                <div class="lang-switcher">
+                    <a href="../el/index.html" title="Greek">
+                        <img src="../images/el-flag.png" alt="Greek" class="flag-icon">
+                    </a>
+                </div>
+
+                <button class="menu-toggle" id="mobile-menu" aria-label="Άνοιγμα μενού">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <!-- SECTION 1: DATA PROTECTION -->
+        <section class="resume-section">
+            <h1 class="section-title">Data Protection & Compliance</h1>
+            <div class="cards-grid">
+                
+                <div class="resume-card">
+                    <h3 class="card-title">General Data Protection Regulation - GDPR</h3>
+                    <h4 class="card-subtitle">Learning Platform Alison.con</h4>
+                    <p class="card-text">Introduction to the General Data Protection Regulation</p>
+                </div>
+
+                <div class="resume-card">
+                    <h3 class="card-title">GDPR and 40 Thieves</h3>
+                    <h4 class="card-subtitle">Mathesis, Crete University Press</h4>
+                    <p class="card-text">General Data Protection Regulation presentation.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 2: DIGITAL ARTS -->
+        <section class="resume-section">
+            <h2 class="section-title">Digital Arts & Photography</h2>
+            <div class="cards-grid">
+
+                <div class="resume-card">
+                    <h3 class="card-title">ecome a Photographer Learning path</h3>
+                    <h4 class="card-subtitle">LinkedIn Learning</h4>
+                    <p class="card-text">Introduction to photography, Effective photographs, Photography foundations (Exposure, Lenses, Composition, Natural, studio and flash lights), Software (Lightroom, Photoshop)</p>
+                </div>
+
+                <div class="resume-card">
+                    <h3 class="card-title">Exploring Photography Backlighting</h3>
+                    <h4 class="card-subtitle">LinkedIn Learning</h4>
+                    <p class="card-text">Backlighting basics, Backlighting portraits, Translucency and backlight, interior backlight scenes.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 3: GENERAL SCIENCES -->
+        <section class="resume-section">
+            <h2 class="section-title">General Science & Humanities</h2>
+            <div class="cards-grid">
+
+                <div class="resume-card">
+                    <h3 class="card-title">Journey to the Universe, First stop: Our Solar System</h3>
+                    <h4 class="card-subtitle">Mathesis, Crete University Press</h4>
+                    <p class="card-text">Introduction to astronomy, the motions, orbits, and rotations of the Sun and the planets of the solar system, solar and lunar eclipses, and Newton’s laws of motion and universal gravitation.</p>
+                </div>
+
+                <div class="resume-card">
+                    <h3 class="card-title">The Antikythera Mechanism</h3>
+                    <h4 class="card-subtitle">Mathesis, Crete University Press</h4>
+                    <p class="card-text">Ancient Greeks and astronomy, Greek astronomers, Discovery of the mechanism, Mechanism functions and structure</p>
+                </div>
+
+                <div class="resume-card">
+                    <h3 class="card-title">Science and the 4th Industrial Revolution: A bet for humanity, a bet for us</h3>
+                    <h4 class="card-subtitle">Mathesis, Crete University Press</h4>
+                    <p class="card-text">Gaining familiarity with cutting-edge technologies of the 4th Industrial Revolution (Molecular Biology, Nanotechnology, Computer Vision, Robotics) and analyzing their ethical and legal challenges.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <button id="backToTop" title="Go to top">^</button>
+
+    <footer>
+        <p>&copy; <span id="year"></span> - Karalis Argiris. All rights reserved.</p>
+    </footer>
+
+    <script src="../script/script.js"></script>
+</body>
+</html>

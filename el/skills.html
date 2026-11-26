@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Argiris Karalis">
+    <title>Βιογραφικό - Γνώσεις Πληροφορικής</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="../image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    <header>
+        <nav class="navbar">
+            <!-- Logo (Εμφανίζεται μόνο σε mobile) -->
+            <div class="logo">
+                <a href="index.html"><img src="../images/logo.png" alt="Logo"></a>
+            </div>
+
+            <!-- Links του Μενού -->
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Αρχική</a>
+                <a href="experience.html">Εμπειρία</a>
+                <a href="education.html">Εκπαίδευση</a>
+                <!-- Dropdown για τα Seminars (Πιάνει μία θέση) -->
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Σεμινάρια ▾</a>
+                    <div class="dropdown-content">
+                        <a href="tech-seminars.html">Τεχνικά Σεμινάρια</a>
+                        <a href="other-seminars.html">Λοιπά Σεμινάρια</a>
+                    </div>
+                </div>
+                <a href="skills.html">Γνώσεις Η/Υ</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Επικοινωνία</a>
+            </div>
+
+            <!-- Δεξιά στοιχεία (Σημαία + Hamburger) -->
+            <div class="nav-right-controls">
+                <div class="lang-switcher">
+                    <a href="../en/index.html" title="English">
+                        <img src="../images/en-flag.png" alt="English" class="flag-icon">
+                    </a>
+                </div>
+
+                <button class="menu-toggle" id="mobile-menu" aria-label="Άνοιγμα μενού">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 id="top">Γνώσεις Πληροφορικής & Τεχνολογίας</h1>
+
+        <div class="skills-container">
+            
+            <!-- COLUMN 1: Advanced (Προχωρημένο) -->
+            <div class="skill-category" style="border-top: 4px solid #2ecc71;">
+                <h2>Προχωρημένο</h2>
+                <ul class="skill-list">
+                    <li><strong>Infrastructure & Networking:</strong> Computer Networks (LAN, WLAN), Telecommunications Troubleshooting, xDSL/Fiber Router Configuration, Siebel/Axiros/NTS.</li>
+                    <li><strong>Operating Systems:</strong> Expert in MS Windows (98, 2000, XP, 7, 10, 11) and MS-DOS.</li>
+                    <li><strong>Productivity Suites:</strong> MS Office 365 / 2010–2019 (Word, Excel, PowerPoint, Access, Visio, OneNote).</li>
+                    <li><strong>Remote Support:</strong> Remote Desktop Tools (AnyDesk, TeamViewer).</li>
+                </ul>
+            </div>
+
+            <!-- COLUMN 2: Intermediate (Μεσαίο) -->
+            <div class="skill-category" style="border-top: 4px solid #f1c40f;">
+                <h2>Μεσαίο</h2>
+                <ul class="skill-list">
+                    <li><strong>Web Development:</strong> HTML5, CSS3, JavaScript, Web Design, Adobe Dreamweaver.</li>
+                    <li><strong>Software & OS:</strong> Visual Basic, Operating Systems (Linux).</li>
+                    <li><strong>Digital Arts:</strong> Adobe Photoshop, Adobe Lightroom.</li>
+                    <li><strong>Compliance:</strong> GDPR Framework & Data Privacy.</li>
+                    <li><strong>Network Protocols:</strong> DHCP, DNS, TCP/IP, IPv4 Subnetting.</li>
+                </ul>
+            </div>
+
+            <!-- COLUMN 3: Basic (Βασικό / Εξοικείωση) -->
+            <div class="skill-category" style="border-top: 4px solid #e74c3c;">
+                <h2>Βασικό / Εξοικείωση</h2>
+                <ul class="skill-list">
+                    <li><strong>Programming & Scripting:</strong> C#, C++, ASP.NET, Assembly, Batch Scripting, PowerShell scripting, Python Programming & Scripting, PLC Programming.</li>
+                    <li><strong>Cloud & Modern Tech:</strong> MS Azure, WordPress, Cybersecurity, VPN, Network Storage Fundamentals.</li>
+                    <li><strong>Engineering & Media:</strong> AutoCAD, MS Visual Studio, 3D Studio MAX, Adobe Illustrator, Adobe Premiere, Combustion, Shake, Corel Draw.</li>
+                    <li><strong>Databases:</strong> Microsoft SQL Server & SQL Databases.</li>
+                    <li><strong>Infrastructure:</strong> Linux Terminal (CLI), Raspberry Pi / IoT.</li>
+                    <li><strong>Security:</strong> Multi-Factor Authentication (MFA), Endpoint Security, Fortinet Security Fabric (NSE 1, 2, 3), Firewalls, Zero Trust Access.</li>
+                    <li><strong>Virtualization:</strong> Hyper-V Administration.</li>
+                    <li><strong>Directory Services:</strong> Active Directory & Group Policy (GPO).</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Κουμπί Back to Top -->
+        <button id="backToTop" title="Go to top">^</button>
+    </main>
+
+    <script src="../Script/script.js"></script>
+
+    <footer>
+        <p>&copy; <span id="year"></span> - Κάραλης Αργύρης. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,49 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Argiris Karalis">
-	<title>Argiris Karalis - Education</title>
-	<link rel="stylesheet" type="text/css" href="../css/style2.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CV - Education</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="../image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
-    <h2 id="top">Education</h2>
+    <div class="cursor-dot"></div>
+    <header>
+        <nav class="navbar">
+            <!-- Logo (Εμφανίζεται μόνο σε mobile) -->
+            <div class="logo">
+                <a href="index.html"><img src="../images/logo.png" alt="Logo"></a>
+            </div>
 
-    <p class="boldtext">Industrial Informatics Engineer. Department of Industrial Informatics, Kavala Institute of Technology</p>
-    
-    <p>Indicative Curriculum:</p>
-    <ul>
-        <li>Networking & Security: Computer Networks, Data Encryption, Network Security, Telematics, Digital Communications.</li>
-        <li>Software & Data: Object-Oriented Programming (C++), Databases (SQL/Oracle), Software Engineering, Algorithms & Data Structures, Data Analysis.</li>
-        <li>Hardware & Embedded Systems: Logical Circuits, Digital Systems, Microprocessors, Embedded Systems, Electric, Electronic & Power Electronic Circuits.</li>
-        <li>Automation & Artificial Intelligence: Industrial Automations, Quality Control, Artificial Intelligence, Intelligent Systems (Fuzzy Logic), AutoCAD.</li>
-    </ul>
-    Projects:
-    <ul>
-        <li>Dissertation: Web application development for "Graduate Professional Tracking" using HTML, CSS, SQL, and Visual Basic.</li>
-        <li>Multimedia Filing System: Application development for the Software Technology course.</li>
-        <li>Automatic Syringe: Hardware and software development for the Embedded Systems course.</li>
-    </ul>
-    <br>
-    <p class="boldtext">Telecommunications Engineer, ΙΕΚ ΑΚΜI.</p>
-    <P>Core Curriculum:</P>
-    <ul>
-        <li>Networking: Introduction to Telecommunications Networks, Internet & Intranet architecture.</li>
-        <li>Operating Systems: Experience across MS-DOS, Windows, and Unix environments.</li>
-        <li>Programming & Databases: Development in Pascal, C, Visual Basic, and Java; Database management with SQL and MS Access.</li>
-        <li>Web Development: Design and coding using HTML, CSS, JavaScript, and Adobe Dreamweaver.</li>
-        <li>Multimedia & Tools: Multimedia Technology and advanced MS Office suite (Word, Excel, PowerPoint).</li>
-    </ul>
-    <p>Academic Projects::</p>
-    <ul>
-        <li>Database Design: Developed an MS Access application for the "Greek Football League (2000-2001)".</li>
-        <li>Software Development: Built a Windows-based "Greek Football League (2001-2002)" application using Visual Basic and SQL Server.</li>
-    </ul>
+            <!-- Links του Μενού -->
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="experience.html">Experience</a>
+                <a href="education.html">Education</a>
+                <!-- Dropdown για τα Seminars (Πιάνει μία θέση) -->
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Seminars ▾</a>
+                    <div class="dropdown-content">
+                        <a href="tech-seminars.html">Tech Seminars</a>
+                        <a href="other-seminars.html">Non-Tech Seminars</a>
+                    </div>
+                </div>
+                <a href="skills.html">Tech Knowledge</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
 
-<button id="backToTop" title="Go to top">^</button>
+            <!-- Δεξιά στοιχεία (Σημαία + Hamburger) -->
+            <div class="nav-right-controls">
+                <div class="lang-switcher">
+                    <a href="../el/index.html" title="Greek">
+                        <img src="../images/el-flag.png" alt="Greek" class="flag-icon">
+                    </a>
+                </div>
 
-<script src="../Script/script.js"></script>
+                <button class="menu-toggle" id="mobile-menu" aria-label="Άνοιγμα μενού">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
 
+    <main class="container">
+        <h1 class="section-title" id="top">Education</h1>
+        <div class="education-timeline">
+            
+           
+            <!-- ΚΑΡΤΑ 1: ΤΕΙ ΚΑΒΑΛΑΣ -->
+            <article class="education-card">
+                <div class="card-header">
+                    <span class="education-date">Bachelor's Degree</span>
+                    <h3>Industrial Informatics Engineer</h3>
+                    <p class="institution">Department of Industrial Informatics, Kavala Institute of Technology</p>
+                </div>
+                
+                <div class="card-content">
+                    <h4>Indicative Curriculum:</h4>
+                    <ul class="subjects-list">
+                        <li><strong>Networking & Security:</strong> Computer Networks, Data Encryption, Network Security, Telematics, Digital Communications.</li>
+                        <li><strong>Software & Data:</strong> Object-Oriented Programming (C++), Databases (SQL/Oracle), Software Engineering, Algorithms & Data Structures, Data Analysis.</li>
+                        <li><strong>Hardware & Embedded Systems:</strong> Logical Circuits, Digital Systems, Microprocessors, Embedded Systems, Electric, Electronic & Power Electronic Circuits.</li>
+                        <li><strong>Automation & Artificial Intelligence:</strong> Industrial Automations, Quality Control, Artificial Intelligence, Intelligent Systems (Fuzzy Logic), AutoCAD.</li>
+                    </ul>
+
+                    <h4>Projects</h4>
+                    <ul class="projects-list">
+                        <li><strong>Dissertation:</strong> Web application development for "Graduate Professional Tracking" using HTML, CSS, SQL, and Visual Basic.</li>
+                        <li><strong>Multimedia Filing System:</strong> Application development for the Software Technology course.</li>
+                        <li><strong>Automatic Syringe:</strong> Hardware and software development for the Embedded Systems course.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <!-- ΚΑΡΤΑ 2: ΙΕΚ ΑΚΜΗ -->
+            <article class="education-card">
+                <div class="card-header">
+                    <span class="education-date">Diploma</span>
+                    <h3>Telecommunications Engineer</h3>
+                    <p class="institution">ΙΕΚ ΑΚΜI</p>
+                </div>
+                
+                <div class="card-content">
+                    <h4>Core Curriculum:</h4>
+                    <ul class="subjects-list">
+                        <li><strong>Networking:</strong> Introduction to Telecommunications Networks, Internet & Intranet architecture.</li>
+                        <li><strong>Operating Systems:</strong> Experience across MS-DOS, Windows, and Unix environments.</li>
+                        <li><strong>Programming & Databases:</strong> Development in Pascal, C, Visual Basic, and Java; Database management with SQL and MS Access.</li>
+                        <li><strong>Web Development:</strong> Design and coding using HTML, CSS, JavaScript, and Adobe Dreamweaver.</li>
+                        <li><strong>Multimedia & Tools:</strong> Multimedia Technology and advanced MS Office suite (Word, Excel, PowerPoint).</li>
+                    </ul>
+
+                    <h4>Academic Projects:</h4>
+                    <ul class="projects-list">
+                        <li><strong>Database Design:</strong> Developed an MS Access application for the "Greek Football League (2000-2001)".</li>
+                        <li><strong>Software Development:</strong> Built a Windows-based "Greek Football League (2001-2002)" application using Visual Basic and SQL Server.</li>
+                    </ul>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <button id="backToTop" title="Go to top">^</button>
+
+    <footer>
+        <p>&copy; <span id="year"></span> - Karalis Argiris. All rights reserved.</p>
+    </footer>
+
+    <script src="../Script/script.js"></script>
 </body>
+</html>

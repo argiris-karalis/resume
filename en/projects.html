@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Argiris Karalis">
+    <title>CV - Projects</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="../image/x-icon" href="../images/favicon.ico">
+</head>
+<body>
+    <div class="cursor-dot"></div>
+    
+    <header>
+        <nav class="navbar">
+            <!-- Logo (Εμφανίζεται μόνο σε mobile) -->
+            <div class="logo">
+                <a href="index.html"><img src="../images/logo.png" alt="Logo"></a>
+            </div>
+
+            <!-- Links του Μενού -->
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="experience.html">Experience</a>
+                <a href="education.html">Education</a>
+                <!-- Dropdown για τα Seminars (Πιάνει μία θέση) -->
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Seminars ▾</a>
+                    <div class="dropdown-content">
+                        <a href="tech-seminars.html">Tech Seminars</a>
+                        <a href="other-seminars.html">Non-Tech Seminars</a>
+                    </div>
+                </div>
+                <a href="skills.html">Tech Knowledge</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <!-- Δεξιά στοιχεία (Σημαία + Hamburger) -->
+            <div class="nav-right-controls">
+                <div class="lang-switcher">
+                    <a href="../el/index.html" title="Greek">
+                        <img src="../images/el-flag.png" alt="Greek" class="flag-icon">
+                    </a>
+                </div>
+
+                <button class="menu-toggle" id="mobile-menu" aria-label="Άνοιγμα μενού">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="section-title">My Projects</h1>
+            <section class="resume-section">
+
+            <!-- PROJECT CARD -->
+            <div class="project-card">
+                <!-- Αριστερό Μέρος: Φωτογραφία (λειτουργεί ως trigger για το Lightbox) -->
+                <div class="project-image-box">
+                    <img src="../images/projects/darkeness_within.png" alt="Project Darkness Within Azeroth Adventures'" class="lightbox-trigger">
+                    <span class="zoom-hint">🔍 Click to enlarge</span>
+                </div>
+                
+                <!-- Δεξί Μέρος: Κείμενο -->
+                <div class="project-info-box">
+                    <h3 class="project-title">Website Design & Development for "Darkness Within Azeroth Adventures"</h3>
+                    <h4 class="project-subtitle">Tech Stack: HTML5, CSS3, JavaScript, Responsive Design</h4>
+                    <p class="project-text">
+                        The project involves the design and implementation of an interactive photo story project for the Horde guild “Darkness Within” 
+                        on the EU realm Haomarush. The project highlights the guild’s key moments and achievements through optimized 
+                        high-resolution galleries, atmospheric design inspired by the World of Warcraft universe, and fully responsive navigation for every device.
+                    </p>
+                    <a href="https://darkness-within.github.io/" target="_blank" class="project-btn">Visit the Site</a>
+                </div>
+            </div>
+
+
+    </main>
+
+    <!-- LIGHTBOX OVERLAY COMPONENT -->
+    <div id="custom-lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <button id="backToTop" title="Go to top">^</button>
+
+    <footer>
+        <p>&copy; <span id="year"></span> - Karalis Argiris. All rights reserved.</p>
+    </footer>
+
+    <script src="../Script/script.js"></script>
+</body>
+</html>

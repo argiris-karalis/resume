@@ -1,65 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Argiris Karalis">
-	<title>Argiris Karalis - Contact Information</title>
-	
-	<link rel="stylesheet" type="text/css" href="../css/style2.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Argiris Karalis">
+    <title>CV - Contact</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="../image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
-<h2 id="top">Contact Information</h2>
-<p id="contact">You can contact me via email or through my LinkedIn profile.</p>
+    <div class="cursor-dot"></div>
+    
+    <header>
+        <nav class="navbar">
+            <!-- Logo (Mobile only) -->
+            <div class="logo">
+                <a href="index.html"><img src="../images/logo.png" alt="Logo"></a>
+            </div>
 
+            <!-- Navigation Links -->
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="experience.html">Experience</a>
+                <a href="education.html">Education</a>
+                <!-- Dropdown for Seminars -->
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Seminars ▾</a>
+                    <div class="dropdown-content">
+                        <a href="tech-seminars.html">Tech Seminars</a>
+                        <a href="other-seminars.html">Non-Tech Seminars</a>
+                    </div>
+                </div>
+                <a href="skills.html">Tech Knowledge</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
 
-<p id="contact">Email: <br><a href="mailto:argiriskaralis@gmail.com">argiriskaralis@gmail.com</a></p>
-<p id="contact">Visit my <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/karalis-argiris/">LinkedIn</a> Profile</p>
-<br>
+            <!-- Right Controls (Flag + Hamburger) -->
+            <div class="nav-right-controls">
+                <div class="lang-switcher">
+                    <a href="../el/index.html" title="Greek">
+                        <img src="../images/el-flag.png" alt="Greek" class="flag-icon">
+                    </a>
+                </div>
 
-<table style="border: 0px;">
-	<tr>
-		<td style="border: 0px;">
-			<p id="contact">Download my business card on mobile by scanning to following QR Code.</p>
-			<p id="contact">
-				<img src="../image/qr-code.png" alt="qr code" width="200" height="200">
-			</p>
-			<p id="contact">Download my <a target="_blank" href="https://drive.google.com/file/d/1D9dQprdn1nwk27LDuaC5MXF-zI2dPnsT/view?usp=sharing">business card</a> on you computer</p>
-		</td>
-		<td style="border: 0px;">
-			<p id="contact">Save contact on your mobile by scanning the following QR Code.</p>
-			<p id="contact">
-				<img src="../image/vcard.png" alt="qr code" width="200" height="200">
-			</p>
-		</td>
-	</tr>
-</table>
+                <button class="menu-toggle" id="mobile-menu" aria-label="Open menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
 
+    <main class="container">
+        <h1 class="section-title">Contact Information</h1>
+        
+        <!-- SECTION 1: DIRECT CONTACT & FREELANCE PLATFORM -->
+        <section class="resume-section">
+            <p class="section-intro">You can contact me by phone, via Viber, by email, or through my LinkedIn profile.</p>
+            
+            <!-- Updated to contact-grid -->
+            <div class="contact-grid">
+                
+                <!-- Card 1: Direct Contact -->
+                <div class="resume-card contact-card">
+                    <h3 class="card-title">Direct Contact</h3>
+                    <p class="card-text"><strong>Mobile Phone:</strong> <a href="tel:+306977746618">+30 6977746618</a></p>
+                    <p class="card-text"><strong>Viber:</strong> <a href="viber://chat?number=306977746618" class="viber-link">Message on Viber</a></p>
+                    <p class="card-text"><strong>Email:</strong> <a href="mailto:argiriskaralis@gmail.com">argiriskaralis@gmail.com</a></p>
+                    <p class="card-text"><strong>LinkedIn:</strong> <a class="linkedin-link" target="_blank" href="https://www.linkedin.com/in/karalis-argiris/">karalis-argiris</a></p>
+                    <p class="card-text"><strong>GitHub:</strong> <a class="github-link" target="_blank" href="https://github.com/argiris-karalis">argiris-karalis</a></p>
+                    <p class="card-text"><strong>Area:</strong> Athens, Greece</p>
+                </div>
 
+                <!-- Card 2: Freelance / Project-based -->
+                <div class="resume-card contact-card freelance-card">
+                    <h3 class="card-title" style="text-align: center;">Looking for Freelance / Project-based?</h3>
+                    <p class="card-text" style="text-align: justify; margin-top: 15px;">
+                        If you're not looking to hire me as an employee but would like me to take on a project for your company or your idea, please visit my professional platform.
+                    </p>
+                    <div style="text-align: center; margin-top: 25px;">
+                        <a href="https://your-freelance-site.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View My Services &rarr;</a>
+                    </div>
+                </div>
 
+            </div>
+        </section>
 
+        <!-- SECTION 2: QR CODES & DIGITAL CARDS -->
+        <section class="resume-section">
+            <h2 class="section-title">Digital Contacts & QR Codes</h2>
+            
+            <!-- Updated to contact-grid -->
+            <div class="contact-grid">
+                
+                <!-- QR Code 1: Business Card -->
+                <div class="resume-card qr-card">
+                    <h3 class="card-title">Business Card</h3>
+                    <p class="card-text">Download my business card to your phone by scanning the QR code.</p>
+                    <div class="qr-container">
+                        <img src="../images/qr-code.png" alt="Business Card QR Code" class="qr-img">
+                    </div>
+                    <p class="card-text card-download-link" style="text-align: center;">
+                        <a target="_blank" href="https://drive.google.com/file/d/1D9dQprdn1nwk27LDuaC5MXF-zI2dPnsT/view?usp=sharing" class="btn-link">Save to computer</a>
+                    </p>
+                </div>
 
+                <!-- QR Code 2: vCard Contact -->
+                <div class="resume-card qr-card">
+                    <h3 class="card-title">Save Contact</h3>
+                    <p class="card-text">Save my contact information directly to your phone by scanning the QR code.</p>
+                    <div class="qr-container">
+                        <img src="../images/vcard.png" alt="vCard Contact QR Code" class="qr-img">
+                    </div>
+                </div>
 
+            </div>
+        </section>
 
+    </main>
 
-<p hidden id="contact">You can also contact me using the following form.</p>
-<br>
-<form hidden class="form" action="mailto:argiriskaralis@yahoo.gr?subject=Mail from My Site's Form" method="post" enctype="text/plain">
-	<laber id="name">Name:</laber><br>
-	<input id="text" name="name" placeholder="Enter your full name" maxlength="50" required>
-	<br><br>
-	<laber id="email">Email:</laber><br>
-	<input id="text" name="email" placeholder="Enter your email" maxlength="100" required>
-	<br><br>
-	<laber id="subject">Subject:</laber><br>
-	<input id="text" name="subject" placeholder="Enter the subject" maxlength="50" required>
-	<br><br>
-	<laber id="message">Message:</laber><br>
-	<textarea id="message" name="message" placeholder="Enter your message" maxlength="1000" required></textarea>
-	<br><br>
-	<input type="submit" value="Send Email">
-	<input type="reset" value="Reset Form">
-</form>
-<a style="visibility: hidden;" id="toplink" href="#top">Back to top</a>
+    <button id="backToTop" title="Go to top">^</button>
+
+    <footer>
+        <p>&copy; <span id="year"></span> - Karalis Argiris. All rights reserved.</p>
+    </footer>
+
+    <script src="../Script/script.js"></script>
 </body>
+</html>

@@ -1,64 +1,132 @@
 <!DOCTYPE html>
 <html lang="el">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="author" content="Argiris Karalis">
-	<title>Αργύρης Κάραλης - Στοιχεία Επικοινωνίας</title>
-	
-	<link rel="stylesheet" type="text/css" href="../css/style2.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Argiris Karalis">
+    <title>Βιογραφικό - Επικοινωνία</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="../image/x-icon" href="../images/favicon.ico">
 </head>
 <body>
-<h2 id="top">Στοιχεία Επικοινωνίας</h2>
-<p id="contact">Μπορείτε να επικοινωνήσετε μαζί μου μέσω email ή μέσω του προφίλ μου στο LinkedIn.</p>
+    <div class="cursor-dot"></div>
+    
+    <header>
+        <nav class="navbar">
+            <!-- Logo (Εμφανίζεται μόνο σε mobile) -->
+            <div class="logo">
+                <a href="index.html"><img src="../images/logo.png" alt="Logo"></a>
+            </div>
 
-<p id="contact">Email: <br><a href="mailto:argiriskaralis@gmail.com">argiriskaralis@gmail.com</a></p>
-<p id="contact">Δείτε το προφίλ μου στο <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/karalis-argiris/">LinkedIn</a></p>
-<br>
+            <!-- Links του Μενού -->
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Αρχική</a>
+                <a href="experience.html">Εμπειρία</a>
+                <a href="education.html">Εκπαίδευση</a>
+                <!-- Dropdown για τα Seminars -->
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Σεμινάρια ▾</a>
+                    <div class="dropdown-content">
+                        <a href="tech-seminars.html">Τεχνικά Σεμινάρια</a>
+                        <a href="other-seminars.html">Λοιπά Σεμινάρια</a>
+                    </div>
+                </div>
+                <a href="skills.html">Γνώσεις Η/Υ</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Επικοινωνία</a>
+            </div>
 
-<table style="border: 0px;">
-	<tr>
-		<td style="border: 0px;">
-			<p id="contact">Κατεβάστε την επαγγελματική μου κάρτα στο κινητό σας, σκανάροντας το παρακάτω QR Code.</p>
-			<p id="contact">
-				<img src="../image/qr-code.png" alt="qr code" width="200" height="200">
-			</p>
-			<p id="contact">Αποθήκευση της <a target="_blank" href="https://drive.google.com/file/d/1D9dQprdn1nwk27LDuaC5MXF-zI2dPnsT/view?usp=sharing">επαγγελματικής κάρτας</a> μου στον υπολογιστή σας</p>
-		</td>
-		<td style="border: 0px;">
-			<p id="contact">Αποθηκεύστε την επαφή στο κινητό σας, σκανάροντας το παρακάτω QR Code.</p>
-			<p id="contact">
-				<img src="../image/vcard.png" alt="qr code" width="200" height="200">
-			</p>
-		</td>
-	</tr>
-</table>
+            <!-- Δεξιά στοιχεία (Σημαία + Hamburger) -->
+            <div class="nav-right-controls">
+                <div class="lang-switcher">
+                    <a href="../en/index.html" title="English">
+                        <img src="../images/en-flag.png" alt="English" class="flag-icon">
+                    </a>
+                </div>
 
+                <button class="menu-toggle" id="mobile-menu" aria-label="Άνοιγμα μενού">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
 
+    <main class="container">
+        <h1 class="section-title">Στοιχεία Επικοινωνίας</h1>
+        
+        <!-- SECTION 1: DIRECT CONTACT & FREELANCE PLATFORM -->
+        <section class="resume-section">
+            <p class="section-intro">Μπορείτε να επικοινωνήσετε μαζί μου τηλεφωνικά, μέσω Viber, email ή μέσω του προφίλ μου στο LinkedIn.</p>
+            
+            <!-- Αλλαγή: contact-grid αντί για cards-grid -->
+            <div class="contact-grid">
+                
+                <!-- Κάρτα 1: Άμεση Επικοινωνία -->
+                <div class="resume-card contact-card">
+                    <h3 class="card-title">Άμεση Επικοινωνία</h3>
+                    <p class="card-text"><strong>Κινητό Τηλέφωνο:</strong> <a href="tel:+306977746618">+30 6977746618</a></p>
+                    <p class="card-text"><strong>Viber:</strong> <a href="viber://chat?number=306977746618" class="viber-link">Μήνυμα στο Viber</a></p>
+                    <p class="card-text"><strong>Email:</strong> <a href="mailto:argiriskaralis@gmail.com">argiriskaralis@gmail.com</a></p>
+                    <p class="card-text"><strong>LinkedIn:</strong> <a class="linkedin-link" target="_blank" href="https://www.linkedin.com/in/karalis-argiris/">karalis-argiris</a></p>
+                    <p class="card-text"><strong>GitHub:</strong> <a class="github-link" target="_blank" href="https://github.com/argiris-karalis">argiris-karalis</a></p>
+                    <p class="card-text"><strong>Περιοχή:</strong> Αθήνα, Ελλάδα</p>
+                </div>
 
+                <!-- Κάρτα 2: Freelance / Project-based -->
+                <div class="resume-card contact-card freelance-card">
+                    <h3 class="card-title" style="text-align: center;">Ψάχνετε Freelance / Project-based;</h3>
+                    <p class="card-text" style="text-align: justify; margin-top: 15px;">
+                        Αν δεν αναζητάτε μισθωτή απασχόληση αλλά θέλετε να αναλάβω ένα έργο για την εταιρεία ή την ιδέα σας, επισκεφθείτε την επαγγελματική μου πλατφόρμα.
+                    </p>
+                    <div style="text-align: center; margin-top: 25px;">
+                        <a href="https://your-freelance-site.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline">Δείτε τις Υπηρεσίες μου &rarr;</a>
+                    </div>
+                </div>
 
+            </div>
+        </section>
 
+        <!-- SECTION 2: QR CODES & DIGITAL CARDS -->
+        <section class="resume-section">
+            <h2 class="section-title">Ψηφιακές Επαφές & QR Codes</h2>
+            
+            <!-- Αλλαγή: contact-grid αντί για cards-grid -->
+            <div class="contact-grid">
+                
+                <!-- QR Code 1: Business Card -->
+                <div class="resume-card qr-card">
+                    <h3 class="card-title">Επαγγελματική Κάρτα</h3>
+                    <p class="card-text">Κατεβάστε την επαγγελματική μου κάρτα στο κινητό σας σκανάροντας το QR Code.</p>
+                    <div class="qr-container">
+                        <img src="../images/qr-code.png" alt="QR Code Επαγγελματικής Κάρτας" class="qr-img">
+                    </div>
+                    <p class="card-text card-download-link" style="text-align: center;">
+                        <a target="_blank" href="https://drive.google.com/file/d/1D9dQprdn1nwk27LDuaC5MXF-zI2dPnsT/view?usp=sharing" class="btn-link">Αποθήκευση στον υπολογιστή</a>
+                    </p>
+                </div>
 
+                <!-- QR Code 2: vCard Contact -->
+                <div class="resume-card qr-card">
+                    <h3 class="card-title">Αποθήκευση Επαφής</h3>
+                    <p class="card-text">Αποθηκεύστε την επαφή μου απευθείας στο κινητό σας τηλέφωνο σκανάροντας το QR Code.</p>
+                    <div class="qr-container">
+                        <img src="../images/vcard.png" alt="QR Code Επαφής vCard" class="qr-img">
+                    </div>
+                </div>
 
+            </div>
+        </section>
 
-<p hidden id="contact">You can also contact me using the following form.</p>
-<br>
-<form hidden class="form" action="mailto:argiriskaralis@yahoo.gr?subject=Mail from My Site's Form" method="post" enctype="text/plain">
-	<laber id="name">Name:</laber><br>
-	<input id="text" name="name" placeholder="Enter your full name" maxlength="50" required>
-	<br><br>
-	<laber id="email">Email:</laber><br>
-	<input id="text" name="email" placeholder="Enter your email" maxlength="100" required>
-	<br><br>
-	<laber id="subject">Subject:</laber><br>
-	<input id="text" name="subject" placeholder="Enter the subject" maxlength="50" required>
-	<br><br>
-	<laber id="message">Message:</laber><br>
-	<textarea id="message" name="message" placeholder="Enter your message" maxlength="1000" required></textarea>
-	<br><br>
-	<input type="submit" value="Send Email">
-	<input type="reset" value="Reset Form">
-</form>
-<a style="visibility: hidden;" id="toplink" href="#top">Back to top</a>
+    </main>
+
+    <button id="backToTop" title="Go to top">^</button>
+
+    <footer>
+        <p>&copy; <span id="year"></span> - Κάραλης Αργύρης. All rights reserved.</p>
+    </footer>
+
+    <script src="../Script/script.js"></script>
 </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Argiris Karalis">
+    <title>CV - Home page</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="../image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="../image/x-icon" href="../images/favicon.ico">
+</head>
+
+<body>
+    <div class="cursor-dot"></div>
+    <header>
+        <nav class="navbar">
+            <!-- Logo (Εμφανίζεται μόνο σε mobile) -->
+            <div class="logo">
+                <a href="index.html"><img src="../images/logo.png" alt="Logo"></a>
+            </div>
+
+            <!-- Links του Μενού -->
+            <div class="nav-links" id="nav-links">
+                <a href="index.html">Home</a>
+                <a href="experience.html">Experience</a>
+                <a href="education.html">Education</a>
+                <!-- Dropdown για τα Seminars (Πιάνει μία θέση) -->
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Seminars ▾</a>
+                    <div class="dropdown-content">
+                        <a href="tech-seminars.html">Tech Seminars</a>
+                        <a href="other-seminars.html">Non-Tech Seminars</a>
+                    </div>
+                </div>
+                <a href="skills.html">Tech Knowledge</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <!-- Δεξιά στοιχεία (Σημαία + Hamburger) -->
+            <div class="nav-right-controls">
+                <div class="lang-switcher">
+                    <a href="../el/index.html" title="Greek">
+                        <img src="../images/el-flag.png" alt="Greek" class="flag-icon">
+                    </a>
+                </div>
+
+                <button class="menu-toggle" id="mobile-menu" aria-label="Άνοιγμα μενού">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        
+        <!-- ΗΡΩΙΚΗ ΕΙΣΑΓΩΓΗ (Hero Section) -->
+        <section class="hero-section">
+            <span class="hero-badge">WELCOME TO MY PROFESSIONAL PROFILE</span>
+            <h1 class="hero-title">Argiris Karalis</h1>
+            <p class="hero-subtitle">IT Infrastructure Specialist & Systems Administrator</p>
+            <div class="hero-divider"></div>
+        </section>
+    
+        
+<div class="about-grid-wrapper">
+
+    <!-- 1. ΤΜΗΜΑ ΔΕΞΙΟΤΗΤΩΝ (Θα πάει ΑΡΙΣΤΕΡΑ στο Desktop) -->
+    <section class="skills-highlight-container">
+        <h2 class="section-title">Core Competencies</h2>
+        <div class="skills-highlight-grid" id="skills-grid">
+            <!-- Tech Support (5/5) -->
+            <div class="skill-bar-item" data-level="5">
+                <span class="skill-name">Tech Support</span>
+                <div class="skill-dots">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+            </div>
+            <!-- Networking (4/5) -->
+            <div class="skill-bar-item" data-level="4">
+                <span class="skill-name">Networking</span>
+                <div class="skill-dots">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+            </div>
+            <!-- Systems (4/5) -->
+            <div class="skill-bar-item" data-level="4">
+                <span class="skill-name">Systems</span>
+                <div class="skill-dots">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+            </div>
+            <!-- App Support (4/5) -->
+            <div class="skill-bar-item" data-level="4">
+                <span class="skill-name">App Support</span>
+                <div class="skill-dots">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+            </div>
+            <!-- MS 365 (4/5) -->
+            <div class="skill-bar-item" data-level="4">
+                <span class="skill-name">MS 365</span>
+                <div class="skill-dots">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+            </div>
+            <!-- OS Admin (5/5) -->
+            <div class="skill-bar-item" data-level="5">
+                <span class="skill-name">OS Admin</span>
+                <div class="skill-dots">
+                    <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CV Download Buttons Container -->
+        <div class="cv-download-container">
+            <h2 class="section-title">Download CV</h2>
+            <div class="cv-buttons-grid">
+                <a target="_blank" href="https://drive.google.com/file/d/17GkBSDuG-WuZoGSEYxaDHLitdJjYpUZc/view?usp=sharing" class="cv-btn cv-gr" download>
+                    <span class="cv-flag">🇬🇷</span> Ελληνικά (PDF)
+                </a>
+                
+                <a target="_blank" href="https://drive.google.com/file/d/1npFbYuQ6nzYcVRvq6P2XSfluH5zTWyAI/view?usp=sharing" class="cv-btn cv-en" download>
+                    <span class="cv-flag">🇬🇧</span> English (PDF)
+                </a>
+            </div>
+        </div>
+        
+        <!-- CV Statistics / Highlights Counters -->
+        <div class="cv-stats-section">
+            <h2 class="section-title">At a Glance</h2>
+            <div class="cv-stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">20+</span>
+                    <span class="stat-label">Years in IT</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">Support</span>
+                    <span class="stat-label">Tailored to your needs</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label">Commitment to Quality</span>
+                </div>
+            </div>
+        </div>      
+    </section>
+
+    <!-- 2. ΤΜΗΜΑ ΠΡΟΦΙΛ (Θα πάει ΔΕΞΙΑ στο Desktop) -->
+    <section class="profile-card">
+        <div class="profile-image-container">
+            <img src="../images/profile.jpg" alt="Αργύρης Κάραλης" class="profile-img">
+        </div>
+        <br>
+        <p class="lead-text">
+            Hello, I’m Argiris Karalis, an IT Infrastructure Specialist & Systems Administrator based in Athens, Greece.
+            With over <strong>20 years of experience</strong> in the IT sector, I have developed a deep expertise in managing complex technical 
+            environments and delivering reliable solutions.
+        </p>
+        <br><br>
+        <p class="profile-text">
+            As a graduate <strong>Industrial Informatics Engineer</strong>, I combine a solid academic background with extensive hands-on experience. 
+            Having worked with major Internet & Telephony Service Providers, I have become an expert in troubleshooting advanced connectivity 
+            (FTTH/VDSL/VoIP), IPTV, and enterprise-level network services for both residential and SOHO environments.
+        </p>
+        <p class="profile-text">
+            Beyond my corporate roles, I have spent over a decade as a Freelance IT Engineer, specializing in Microsoft 365 administration 
+            and providing tailored hardware and software support to small businesses and home offices. My journey has shaped me into a versatile 
+            professional — a multitasking team player who excels under pressure and is always ready to mentor others or take on the next big technical challenge.
+        </p>
+        <div style="clear: both;"></div>
+    </section>
+
+</div>
+        </div>
+    </main>
+
+    <button id="backToTop" title="Go to top">^</button>
+
+    <footer>
+        <p>&copy; <span id="year"></span> - Karalis Argiris. All rights reserved.</p>
+    </footer>
+
+    <script src="../Script/script.js"></script>
+</body>
+</html>
